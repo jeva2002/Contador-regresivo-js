@@ -1,0 +1,61 @@
+$bg-color: #43291F;
+$main-title: #87C38F;
+$title: #226F54;
+$box: #F4F0BB;
+$num: #DA2C38;
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  background-color: $bg-color;
+  padding: 10rem;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    h1 {
+      font-size: 5rem;
+      color: $main-title;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 4rem;
+      color: $main-title;
+    }
+  
+    section {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+      
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1rem;
+        background-color: $box;
+        width: 20rem;
+        height: 20rem;
+      }
+  
+      h2 {
+        font-size: 3.5rem;
+        color: $title;
+      }
+  
+      time {
+        font-size: 4.5rem;
+        color: $num;
+      }
+    }
+  }
+}
+
