@@ -8,6 +8,7 @@ body {
   font-family: 'Red Hat Text', sans-serif;
   padding-top: 60px;
   overflow: hidden;
+  user-select: none;
 
   main {
     display: flex;
@@ -28,7 +29,6 @@ body {
       justify-content: center;
       align-items: center;
       gap: 40px;
-      user-select: none;
 
       .time-container {
 
