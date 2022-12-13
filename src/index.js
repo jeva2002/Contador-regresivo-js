@@ -1,7 +1,9 @@
 import './styles/style.scss';
 import timerComponent from './components/timerComponent.js';
+import footerComponent from './components/footer.js';
 
 document.body.appendChild(timerComponent());
+document.body.appendChild(footerComponent());
 
 const [days, hours, minutes, seconds] = document.querySelectorAll('time');
 

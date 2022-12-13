@@ -59,4 +59,28 @@ body {
       }
     }
   }
+
+  footer {
+    background-image: url('../assets/pattern-hills.svg');
+    height: 200px;
+    width: 99%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+    position: absolute;
+    bottom: 0;
+
+    img {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: 80px;
+      cursor: pointer;
+    }
+
+    img:hover {
+      filter: invert(49%) sepia(100%) saturate(1640%) hue-rotate(310deg) brightness(101%) contrast(98%);
+    }
+  }
 }

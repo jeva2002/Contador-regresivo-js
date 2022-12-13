@@ -23,6 +23,10 @@ module.exports = {
         test: /.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        type: 'asset',
+        test: /\.(svg)$/i,
+      },
     ],
   },
   plugins: [
