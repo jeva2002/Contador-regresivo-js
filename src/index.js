@@ -1,4 +1,7 @@
 import './styles/style.scss';
+import timerComponent from './components/timerComponent.js';
+
+document.body.appendChild(timerComponent());
 
 const [days, hours, minutes, seconds] = document.querySelectorAll('time');
 

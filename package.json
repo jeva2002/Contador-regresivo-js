@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch --mode=development",
-    "build": "webpack --mode=production --optimize-minimize"
+    "build": "webpack --mode=production --optimize-minimize",
+    "server": "npx webpack-dev-server --open --mode=development"
   },
   "repository": {
     "type": "git",
