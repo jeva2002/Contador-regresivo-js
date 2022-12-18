@@ -1,7 +1,6 @@
 import './styles/style.scss';
 import timerComponent from './components/timerComponent.js';
 import footerComponent from './components/footer.js';
-import axios from 'axios';
 
 document.body.appendChild(timerComponent());
 document.body.appendChild(footerComponent());
@@ -13,17 +12,14 @@ const formatNum = (_num) => {
 };
 
 const count = (_time) => {
+  const newYear = new Date(2022, 11, 31, 23, 59, 59, 999)
   const date = new Date(Date.now());
-  seconds.innerHTML = formatNum(60 - date.getSeconds());
-  minutes.innerHTML = formatNum(60 - date.getMinutes());
-  hours.innerHTML = formatNum(24 - date.getHours());
-  days.innerHTML = formatNum(31 - date.getDate());
+  seconds.innerHTML = formatNum(newYear.getSeconds() - date.getSeconds());
+  minutes.innerHTML = formatNum(newYear.getMinutes() - date.getMinutes());
+  hours.innerHTML = formatNum(newYear.getHours() - date.getHours());
+  days.innerHTML = formatNum(newYear.getDate() - date.getDate());
 };
 
 setInterval(() => {
   count();
 }, 1000);
-
-axios.get('http://worldtimeapi.org/api/timezone/America/Bogota').then((res) => {
-  console.log(res.data.utc_datetime);
-});
