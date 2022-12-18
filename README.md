@@ -1,6 +1,9 @@
-# Contador-regresivo-js
-Se genera un contador regresivo a una fecha específica
+# Contador Regresivo Webpack, Babel, SASS y JS
 
-Se trata de un contador que está programado para mostrar el tiempo restante del mes de diciembre de 2022. Se utiliza algo mínimo de SASS, HTML y JS.
+A partir de unos requerimientos se genera un contador con un diseño específico.
 
-https://jeva2002.github.io/Contador-regresivo-js/dist/index.html
+## Ejecución
+
+Para visualizarse ingresar al siguiente enlace:
+
+    https://jeva2002.github.io/Contador-regresivo-js/dist/index.html
