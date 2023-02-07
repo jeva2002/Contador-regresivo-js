@@ -12,7 +12,7 @@ const formatNum = (_num) => {
 };
 
 const count = (_time) => {
-  const newYear = new Date(2023, 11, 31, 23, 59, 59, 999)
+  const newYear = new Date(2023, 01, 28, 23, 59, 59, 999);
   const date = new Date(Date.now());
   seconds.innerHTML = formatNum(newYear.getSeconds() - date.getSeconds());
   minutes.innerHTML = formatNum(newYear.getMinutes() - date.getMinutes());
@@ -23,4 +23,3 @@ const count = (_time) => {
 setInterval(() => {
   count();
 }, 1000);
-
